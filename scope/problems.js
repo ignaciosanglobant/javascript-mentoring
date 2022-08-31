@@ -1,30 +1,37 @@
+/************************************************/
+/* 1. What is the outcome of the following code */
+/************************************************/
 /*
+var a = 10;
 
-let magicNumber = 8;
-
-function printNumber() {
-  console.log(magicNumber);
+function foo() {
+  console.log(a);
 }
 
-// magicNumber = 3;
+foo();
+ */
 
-printNumber();
+/************************************************/
+/* 2. What is the outcome of the following code */
+/************************************************/
+/*
+var a = 10;
 
-function printMagicNumber() {
-  const magicNumber = 2;
-  console.log(magicNumber);
+function foo() {
+  var a = 20;
+  console.log(a);
 }
 
-const printArrowMagicNumber = () => {
-  const magicNumber = 4;
-  console.log(magicNumber);
-};
+a = 30;
 
-printMagicNumber();
-printArrowMagicNumber();
+foo();
+ */
 
-//////////
+/************************************************/
+/* 3. What is the outcome of the following code */
+/************************************************/
 
+/*
 var a = 10;
 function foo() {
   console.log(a);
@@ -36,11 +43,13 @@ function bar() {
 }
 
 bar();
+ */
 
-*/
+/************************************************/
+/* 4. What is the outcome of the following code */
+/************************************************/
 
-///////////
-
+/*
 var a = 10;
 
 function bar() {
@@ -54,3 +63,4 @@ function bar() {
 }
 
 bar();
+ */

@@ -45,7 +45,7 @@ let count = 0;
 /***********************************************/
 /* 4. What is the output of the following code */
 /***********************************************/
-
+/*
 function createCounter() {
   let i = 0;
   return function () {
@@ -62,3 +62,4 @@ console.log(increase1());
 
 console.log(increase2());
 console.log(increase2());
+*/

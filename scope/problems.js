@@ -7,7 +7,6 @@ var a = 10;
 function foo() {
   console.log(a);
 }
-
 foo();
  */
 
@@ -63,4 +62,4 @@ function bar() {
 }
 
 bar();
- */
+*/

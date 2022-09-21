@@ -43,6 +43,7 @@ let animals = [
 animals.includes({ name: "Cat", canFly: false });
 
 console.log(animals.some((animal) => animal.name === "Cat"));
+
 function compare(a, b) {
   if (a.name < b.name) {
     return -1;

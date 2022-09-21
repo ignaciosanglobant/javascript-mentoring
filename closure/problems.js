@@ -23,14 +23,15 @@ innerFunc();
 (function (a) {
   return (function (b) {
     console.log(a);
+    console.log(b);
   })(1);
 })(0);
-*/
+ */
 
 /***********************************************/
 /* 3. What is the output of the following code */
 /***********************************************/
-/* 
+/*
 let count = 0;
 
 (function () {
@@ -40,14 +41,14 @@ let count = 0;
   }
   console.log(count);
 })();
-*/
+ */
 
 /***********************************************/
 /* 4. What is the output of the following code */
 /***********************************************/
 /*
+let i = 0;
 function createCounter() {
-  let i = 0;
   return function () {
     i++;
     return i;
@@ -57,9 +58,11 @@ function createCounter() {
 let increase1 = createCounter();
 let increase2 = createCounter();
 
-console.log(increase1());
-console.log(increase1());
+i = 12;
 
-console.log(increase2());
-console.log(increase2());
+console.log(increase1()); //1
+console.log(increase1()); //2
+
+console.log(increase2()); //1
+console.log(increase2()); //2
 */

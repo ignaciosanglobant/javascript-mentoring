@@ -1,4 +1,4 @@
-this.nombre = "Fernando";
+// this.nombre = "Fernando";
 // const nombre = "Fernando";
 
 const objeto = {
@@ -6,18 +6,30 @@ const objeto = {
   imprimeNombre: function () {
     console.log(this.nombre);
   },
+  imprimeEdad: function () {
+    console.log("edad", this.edad);
+  },
 };
 
 const otroObjeto = {
   nombre: "Mario",
+  edad: 12,
 };
 
-objeto.imprimeNombre();
+const imprimeEdad = objeto.imprimeEdad;
+imprimeEdad.bind(otroObjeto)();
+
 const imprimeNombre = objeto.imprimeNombre;
-imprimeNombre();
-
-const imprimeNombreReferenciado = imprimeNombre.bind(objeto);
-
-imprimeNombreReferenciado();
 imprimeNombre.bind(otroObjeto)();
+
+/*
+// objeto.imprimeNombre();
+// imprimeNombre();
+const imprimeNombreReferenciado = imprimeNombre.bind(objeto);
+// imprimeNombreReferenciado();
+
+
+
+
 imprimeNombre.bind(this)();
+*/

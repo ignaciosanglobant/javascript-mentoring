@@ -1,34 +1,43 @@
 // Arreglos
+// Spread operator ...
+// console.log(arreglo.slice(0, 3));
+// console.log(arreglo.slice(3));
+let [x, y, z, ...cambioNombre] = arreglo;
+// console.log(x, y, z);
+// console.log("resto", cambioNombre);
+
+// const corto = [1, 2];
+// const [primero, segundo, tercero, ...otros] = corto;
+// console.log({ primero, segundo, tercero, otros });
 
 const arreglo = [1, 2, 3, 4, 5];
-let [x, y, ...resto] = arreglo;
-console.log(x, y);
-console.log("resto", resto);
-
-const corto = [1, 2];
-const [primero, segundo, tercero, ...otros] = corto;
-console.log({ primero, segundo, tercero, otros });
-
 let copiaArreglo = arreglo;
 arreglo.push(6);
-console.log({ arreglo });
-console.log({ copiaArreglo });
-
+// console.log({ arreglo });
+// console.log({ copiaArreglo });
 copiaArreglo = [...arreglo];
 arreglo.push(7);
-console.log({ arreglo });
-console.log({ copiaArreglo });
+// console.log({ arreglo });
+// console.log({ copiaArreglo });
 
-const nuevoArreglo = [0, ...arreglo, 8];
-console.log({ nuevoArreglo });
-
-// Objetos
+// Spread operator
+const nuevoArreglo = [0, ...arreglo, 8, 10, ...arreglo];
+// console.log({ nuevoArreglo });
 
 const objeto = {
   nombre: "Pedro",
   edad: 18,
   imprimeHolaMundo: () => console.log("Hola mundo"),
 };
+
+const { nombre, edad: edadPersona, imprimeHolaMundo } = objeto;
+console.log(edadPersona);
+
+/*
+
+
+// Objetos
+
 
 const { nombre, edad: edadPersona, imprimeHolaMundo } = objeto;
 imprimeHolaMundo();
@@ -66,3 +75,4 @@ const {
 } = metadata;
 
 console.log(englishTitle, localeTitle);
+*/
